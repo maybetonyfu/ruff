@@ -8,11 +8,11 @@ def nav():
     with tag('nav'):
         with tag('ul'):
             with tag('li'):
-                text('first')
+                with tag('a', href='/index.html'):
+                    text('Home')
             with tag('li'):
-                text('second')          
-            with tag('li'):
-                text('third')
+                with tag('a', href='/post.html'):
+                    text('First post') 
     return doc.getvalue()
 
 if __name__ == '__main__':

@@ -12,5 +12,6 @@ with tag('html'):
         with tag('h1'):
             text('Hello world!')
 
-with open(to_html(__file__), 'w') as file:
-    file.write(doc.getvalue())
+if __name__ == '__main__':
+    with open(to_html(__file__), 'w') as file:
+        file.write(doc.getvalue())
