@@ -11,7 +11,7 @@ def nav():
                 with tag('a', href='/index.html'):
                     text('Home')
             with tag('li'):
-                with tag('a', href='/post.html'):
+                with tag('a', href='/post/first_post.html'):
                     text('First post') 
     return doc.getvalue()
 
